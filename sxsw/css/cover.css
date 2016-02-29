@@ -1,0 +1,228 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #000000;
+}
+
+/* Custom default button 
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; */ /* Prevent inheritence from `body` 
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+*/
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  
+  /* background: url('backcolor2.jpg'); */
+ 
+}
+body {
+  text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  position: relative;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Padding for spacing */
+.inner {
+ 
+  padding: 30px;
+  color: #000;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li+li {
+  margin-left: 20px;
+ 
+  
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: #000;
+  border-bottom: 2px solid transparent;
+}
+
+.masthead-nav > li > a:hover ,  .masthead-nav>li.active a
+{
+color: #FF0000;
+background-color#fff; 
+}
+
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}.
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  
+  border-bottom: 2px solid #000!important;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+  float:left;
+  }
+  .masthead-nav {
+    float: none;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 40px 20px;
+  margin-top: 20px;
+  
+}
+
+.footer {
+    display: inline-block;
+    margin-left: 22px;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
+  .mastfoot {
+   position:absolute;
+   bottom: 0px;
+	font-size:11px;
+  }
+  /* Start the vertical centering */
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+.nobg:hover {
+background-color:transparent!important;
+}
+#songtitle div {
+  color: #000000;
+  font-size: 200%;
+}
+
+#table {
+margin-left: 10%;
+margin-right:10%;
+background-color:rgba(0,0,0,0.5);
+}
+#table td{
+text-align: left;
+font-size: 17px;
+padding-top: 10px;
+color: #D8D8D8;
+}
+#table th {
+text-align: left;
+color:#CC1100;
+font-size: 18px;
+}
+#table-bordered  {
+display:inline-block;
+}
+#table-bordered  td{
+border: 2px solid black;
+background-color:rgba(0,0,0,0.5);
+color:#D8D8D8;
+font-size: 12px
+}
+#table-bordered tbody{
+float:center;
+}
+
+#info {
+margin-left:25px;
+background-color:rgba(0,0,0,0.5);
+color:#D8D8D8;
+text-align: left;
+display:inline-block;
+font-size: 13px;
+font-weight:bold;
+}
+#info th{
+font-size:17px;
+}
+

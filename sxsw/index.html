@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Live</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+
+</head>
+<body>
+
+<div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+
+		<div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner"><h3 class="masthead-brand"><img alt="" src="gallery/logo.png" style="position:fixed; top:10px;left:20px;width:120; height:120px"></h3><br><br>
+			</div>
+         </div>
+		 <div class="inner cover" id="songtitle">
+
+		 	<img src="gallery/bars.gif"/><br><br><br>
+
+		 	<img src="gallery/boneshdmi.gif"/>
+			
+			<audio width="300" height="32" id="background_audio" hidden="true" controls="controls" autoplay="autoplay" src="http://s6.voscast.com:10432/;"></audio><br><br>
+
+
+			<script type="text/javascript" src="http://cdn.voscast.com/stats/display.js?key=352c22c40de72f46eb35b9b3805439f6&stats=songtitle"></script><br>
+
+
+			<a href="#noscroll" id="mute">mute/unmute</a>
+
+         </div>
+		  
+    </div>
+	</div>
+
+	<div class="footer">
+    	<a href="http://twitter.com/twitter">@twitter</a> / <a href="mailto:ayy@mail.com">Mail</a> / <a href="google.com">Some other link</a>
+
+	<script type="text/javascript">
+		
+		var audio = document.getElementById('background_audio');
+
+		document.getElementById('mute').addEventListener('click', function (e)
+		{
+		    e = e || window.event;
+		    audio.muted = !audio.muted;
+		    e.preventDefault();
+		}, false);
+
+	</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+
+  </body>
+</html>
