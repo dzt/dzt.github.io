@@ -1,0 +1,94 @@
+
+
+body{
+  margin:0;
+  padding:0;
+  font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif; font-weight:400; font-stretch:normal;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #0c1320;
+}
+fieldset {color: #0c1320; border: none;}
+input {color: #0c1320;}
+#home {
+    background: url(../imgs/bgmain.png) no-repeat fixed;
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2100px;
+    position: relative;
+}
+#contact {
+background: url(../imgs/bg1.jpg) 0 no-repeat fixed;
+height: 100%;
+margin: 0 auto;
+    width: 100%;
+    max-width: 2100px;
+    position: relative;
+}
+
+#middle {
+  background: black;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2100px;
+  position: relative;
+}
+
+h2 {
+  color: white;
+}
+
+.button, submit, input[type='submit'], button {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    height: 56px;
+    line-height: 56px;
+    margin: 0;
+    outline: 0;
+    padding: 0 16px;
+    white-space: nowrap;
+    width: 220px;
+}
+
+a {text-decoration: none; text-transform: none;}
+h2 {font-weight: 600;}
+h3 {font-weight: 700; font-size: 30px;}
+p {width: 750px;}
+/* Introduction */
+
+#middle article {text-align: center; margin: 0 auto;position: absolute; top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);}
+
+#home article {text-align: center; margin: 0 auto;position: absolute; top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);}
+#home article img {padding-bottom: 25px;}
+
+#contact article {background: url("imgs/last.png") no-repeat scroll center top transparent; height: 500px; position: absolute; text-indent: -9999px; bottom: 50px; width: 100%;}
+
+.signature {margin-top: 50px;}
+.cimage {text-align: left;}
