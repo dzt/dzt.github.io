@@ -1,173 +1,255 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Peter Soboyejo</title>
-		<meta content="width=500" name="viewport">
-		
-		<link href="css/app.css" media="screen" rel="stylesheet" type="text/css">
-		<script src="js/app.js" type="text/javascript"></script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
-		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="icon" href="imgs/fav.png" type="image/x-icon">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Peter Soboyejo</title>
+	<meta content="width=500" name="viewport">
 
-		<style type="text/css">
+	<link href="css/app.css" media="screen" rel="stylesheet" type="text/css">
+	<script src="js/app.js" type="text/javascript"></script>
 
-			html, body {
-			    height: 100%;
-			    background-color: #333;
-			}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="icon" href="imgs/fav.png" type="image/x-icon">
 
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+			background-color: #333;
+		}
+
+		.modal-dialog {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+
+		.modal-body {
+			overflow-y: auto;
+		}
+
+		.modal-footer {
+			margin-top: 0;
+		}
+
+		@media (max-width: 767px) {
 			.modal-dialog {
-			    margin: 0;
-			    position: absolute;
-			    top: 50%;
-			    left: 50%;
+				width: 100%;
 			}
+		}
+	</style>
+</head>
 
-			.modal-body {
-			    overflow-y: auto;
-			}
-			.modal-footer {
-			    margin-top: 0;
-			}
-
-			@media (max-width: 767px) {
-			  .modal-dialog {
-			    width: 100%;
-			  }
-			}
-
-		</style>
-	</head>
-
-	<body>
-		<div class="wrapper">
+<body>
+	<div class="wrapper">
 		<div class="wrapper-inner">
-		<div class="circle">
-		<a class="center" data-toggle="modal" href="#about">
-		<img data-original-title="About Peter" title="" src="imgs/me.png" rel="tt-top">
-		</a>
-		<a class="r" data-rot="0" href="mailto:thepcmrtim@gmail.com" target="_blank" style="transform: rotate(0deg) translate(200px) rotate(-0deg);">
+			<div class="circle">
+				<a class="center" data-toggle="modal" href="#about">
+					<img data-original-title="About Peter" title="" src="imgs/me.png" rel="tt-top">
+				</a>
+				<a class="r" data-rot="0" href="mailto:thepcmrtim@gmail.com" target="_blank" style="transform: rotate(0deg) translate(200px) rotate(-0deg);">
 
-			<i class="fa fa-send" rel="tt-left" title="" data-original-title="thepcmrtim@gmail.com"></i>
+					<i class="fa fa-send" rel="tt-left" title="" data-original-title="thepcmrtim@gmail.com"></i>
 
-		</a>
-		<a class="r" data-rot="45" href="https://facebook.com/psoboyejo" target="_blank" style="transform: rotate(45deg) translate(200px) rotate(-45deg);">
+				</a>
+				<a class="r" data-rot="45" href="https://facebook.com/psoboyejo" target="_blank" style="transform: rotate(45deg) translate(200px) rotate(-45deg);">
 
-			<i class="fa fa-facebook" rel="tt-left" title="" data-original-title="Facebook"></i>
+					<i class="fa fa-facebook" rel="tt-left" title="" data-original-title="Facebook"></i>
 
-		</a>
-		<a class="r" data-rot="90" href="https://www.linkedin.com/in/peter-soboyejo-7573a898" target="_blank" style="transform: rotate(90deg) translate(200px) rotate(-90deg);">
+				</a>
+				<a class="r" data-rot="90" href="https://www.linkedin.com/in/peter-soboyejo-7573a898" target="_blank" style="transform: rotate(90deg) translate(200px) rotate(-90deg);">
 
-			<i class="fa fa-linkedin" rel="tt-top" title="" data-original-title="LinkedIn"></i>
+					<i class="fa fa-linkedin" rel="tt-top" title="" data-original-title="LinkedIn"></i>
 
-		</a>
-		<a class="r" data-rot="135" href="music/index.html" target="_blank" style="transform: rotate(135deg) translate(200px) rotate(-135deg);">
+				</a>
+				<a class="r" data-rot="135" href="music/index.html" target="_blank" style="transform: rotate(135deg) translate(200px) rotate(-135deg);">
 
-			<i class="fa fa-music" rel="tt-right" title="" data-original-title="Music"></i>
+					<i class="fa fa-music" rel="tt-right" title="" data-original-title="Music"></i>
 
-		</a>
-		<a class="r" data-rot="180" href="https://plus.google.com/112625321893099820402" target="_blank" style="transform: rotate(180deg) translate(200px) rotate(-180deg);">
+				</a>
+				<a class="r" data-rot="180" href="https://plus.google.com/112625321893099820402" target="_blank" style="transform: rotate(180deg) translate(200px) rotate(-180deg);">
 
-			<i class="fa fa-google-plus" rel="tt-right" title="" data-original-title="Google+"></i>
+					<i class="fa fa-google-plus" rel="tt-right" title="" data-original-title="Google+"></i>
 
-		</a>
-		<a class="r" data-rot="225" href="http://www.last.fm/user/pxtvr" target="_blank" style="transform: rotate(225deg) translate(200px) rotate(-225deg);">
+				</a>
+				<a class="r" data-rot="225" href="http://www.last.fm/user/pxtvr" target="_blank" style="transform: rotate(225deg) translate(200px) rotate(-225deg);">
 
-			<i class="fa fa-lastfm" rel="tt-right" title="" data-original-title="LastFM"></i>
+					<i class="fa fa-lastfm" rel="tt-right" title="" data-original-title="LastFM"></i>
 
-		</a>
-		<a class="r" data-rot="270" href="https://github.com/dzt" target="_blank" style="transform: rotate(270deg) translate(200px) rotate(-270deg);">
+				</a>
+				<a class="r" data-rot="270" href="https://github.com/dzt" target="_blank" style="transform: rotate(270deg) translate(200px) rotate(-270deg);">
 
-			<i class="fa fa-github" rel="tt-bottom" title="" data-original-title="GitHub"></i>
+					<i class="fa fa-github" rel="tt-bottom" title="" data-original-title="GitHub"></i>
 
-		</a>
-		<a class="r" data-rot="315" href="https://youtube.com/user/thepcmrtim" target="_blank" style="transform: rotate(315deg) translate(200px) rotate(-315deg);">
+				</a>
+				<a class="r" data-rot="315" href="https://youtube.com/user/thepcmrtim" target="_blank" style="transform: rotate(315deg) translate(200px) rotate(-315deg);">
 
-			<i class="fa fa-youtube-play" rel="tt-left" title="" data-original-title="YouTube"></i>
-		</a>
+					<i class="fa fa-youtube-play" rel="tt-left" title="" data-original-title="YouTube"></i>
+				</a>
+			</div>
 		</div>
-		</div>
-		</div>
+	</div>
 	<center>
 		<div class="modal fade" id="about" style="display: none;" aria-hidden="true">
-		<div class="modal-dialog" style="margin-top: -168px; margin-left: -300px;">
-		<div class="modal-content" style="max-height: 851px;">
-		<div class="modal-header">
-		<button class="close" data-dismiss="modal">×</button>
-		<h4 class="modal-title">About Peter</h4>
-		</div>
-		<div class="modal-body" style="max-height: 793px;">
-			<p>Hi there. My name is Peter Soboyejo.</p>
-			<p>
-			I'm a 15 year old developer based in Princeton, New Jersey. For my entire life I've had a passion for learning 
-			about how things work and building new things.
-			</p>
-			<p>
-			I'm currently working on <a href="http://premefeed.github.io">PremeFeed</a> a mobile application that allows you
-			to stay updated on hundreds of Web Stores when new releases, restocks, and items get sold out. PremeFeed features
-			a one click payment option that allows users to purchase items on high demand right away. It will be avaible available
-			on iOS and Android in the upcoming weeks.
-			</p>
-			<p>
-			I'm currently a freshman attending <a href="http://www.mtsd.k12.nj.us/domain/79">Montgomery High School</a>, graduating in 2019.
-			</p>
-			<p>
-			I currently work with Node.js, Android, iOS, and Embedded software. Primarily I use C, Java, Objective-C, Python, Swift, JavaScript, CSS, and HTML for most of my work.
-			</p>
-			<p>
-			Favorite Game Right Now: <a href="http://store.steampowered.com/app/730/">Counter-Strike: Global Offensive</a> :)
-			</p>
-			<p>
-			What am I currently learning?: Cross Platform Desktop Development using <a href="http://electron.atom.io/">Electron</a>.
-				<b><h4>Projects</h4></b>
-			    <p><a href="http://premefeed.github.io">PremeFeed</a></p>
-			    <p><a href="https://play.google.com/store/apps/details?id=com.petersoboyejo.csgoesportsscores&hl=en">eSports Stats for CS:GO</a></p>
-			    <p><a href="https://play.google.com/store/apps/details?id=checklist.uwac.com.checklist&hl=en">Transition Checklist</a></p>
-			    <p><a href="https://www.youtube.com/watch?v=fzj1REoP0AM">Yiblr</a></p>
-			    <p><a href="http://skinreserve.com/">Skinreserve</a></p>
-			    <p><a href="#">MTSD App (Montgomery School District App)</a></p>
-			    <p><a href="http://github.com/dzt/ftp">iOS App for FTP</a></p>
-			<br>
-			<hr>
-			<p>Where I can be found</p>
-			<br>
-			<p id="icons">
-			<a href="mailto:thepcmrtim@gmail.com" target="blank">
-			<i class="fa fa-2x fa-send" rel="tt-top" title="" data-original-title="thepcmrtim@gmail.com"></i>
-			</a>
-			<a href="https://facebook.com/psoboyejo" target="blank">
-			<i class="fa fa-2x fa-facebook" rel="tt-top" title="" data-original-title="Facebook"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/peter-soboyejo-7573a898" target="blank">
-			<i class="fa fa-2x fa-linkedin" rel="tt-top" title="" data-original-title="LinkedIn"></i>
-			<a href="http://twitch.tv/thepcmrtim" target="blank">
-			<i class="fa fa-2x fa-twitch" rel="tt-top" title="" data-original-title="TwitchTV"></i>
-			</a>
-			<a href="https://github.com/dzt" target="blank">
-			<i class="fa fa-2x fa-github" rel="tt-top" title="" data-original-title="GitHub"></i>
-			</a>
-		</a>
-		</p>
-		</div>
-		</div>
-		</div>
+			<div class="modal-dialog" style="margin-top: -168px; margin-left: -300px;">
+				<div class="modal-content" style="max-height: 851px;">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">×</button>
+						<h4 class="modal-title">About Peter</h4>
+					</div>
+					<div class="modal-body" style="max-height: 793px;">
+						<p>Hi there. My name is Peter Soboyejo.</p>
+						<p>
+							I'm a 16 year old developer based in Northborough, Massachusetts. For my entire life I've had a passion for learning about how things work and building new things.
+						</p>
+						<p>
+							I'm currently working on <a href="http://premefeed.github.io">PremeFeed</a> a mobile application that allows you to stay updated on hundreds of Web Stores when new releases, restocks, and items get sold out. PremeFeed features a one click payment
+							option that allows users to purchase items on high demand right away. It will be avaible available on iOS and Android in the upcoming weeks.
+						</p>
+						<p>
+							I'm currently a sophomore attending <a href="http://algonquin.nsboro.k12.ma.us/pages/ARHS">Algonquin Regional High School</a>, graduating in 2019.
+						</p>
+						<p>
+							I currently work with Node.js, Android, iOS, and Embedded software. Primarily I use C, Java, Objective-C, Python, Swift, JavaScript, CSS, and HTML for most of my work.
+						</p>
+						<p>
+							Favorite Game Right Now: <a href="https://www.callofduty.com/modern-warfare-remastered">Call of Duty: Modern Warfare Remastered</a> :)
+						</p>
+						<p>
+							What am I currently learning?: Cross Platform Desktop Development using <a href="http://electron.atom.io/">Electron</a>.
+							<b><h4>Projects</h4></b>
+							<p><a href="http://premefeed.github.io">PremeFeed</a></p>
+							<p><a href="https://play.google.com/store/apps/details?id=com.petersoboyejo.csgoesportsscores&hl=en">eSports Stats for CS:GO</a></p>
+							<p><a href="https://play.google.com/store/apps/details?id=checklist.uwac.com.checklist&hl=en">Transition Checklist</a></p>
+							<p><a href="https://www.youtube.com/watch?v=fzj1REoP0AM">Yiblr</a></p>
+							<p><a href="http://skinreserve.com/">Skinreserve</a></p> (Retired)
+							<p><a href="http://github.com/dzt/ftp">iOS App for FTP</a></p>
+							<p><a href="/sscout">sScout</a></p>
+							<p><a href="https://github.com/dzt/jetta">Jetta</a></p>
+
+							<br>
+							<hr>
+							<p>Where I can be found</p>
+							<br>
+							<p id="icons">
+								<a href="mailto:thepcmrtim@gmail.com" target="blank">
+									<i class="fa fa-2x fa-send" rel="tt-top" title="" data-original-title="thepcmrtim@gmail.com"></i>
+								</a>
+								<a href="https://facebook.com/psoboyejo" target="blank">
+									<i class="fa fa-2x fa-facebook" rel="tt-top" title="" data-original-title="Facebook"></i>
+								</a>
+								<a href="https://www.linkedin.com/in/peter-soboyejo-7573a898" target="blank">
+									<i class="fa fa-2x fa-linkedin" rel="tt-top" title="" data-original-title="LinkedIn"></i>
+									<a href="http://twitch.tv/thepcmrtim" target="blank">
+										<i class="fa fa-2x fa-twitch" rel="tt-top" title="" data-original-title="TwitchTV"></i>
+									</a>
+									<a href="https://github.com/dzt" target="blank">
+										<i class="fa fa-2x fa-github" rel="tt-top" title="" data-original-title="GitHub"></i>
+									</a>
+								</a>
+							</p>
+					</div>
+				</div>
+			</div>
 		</div>
 		</div>
 	</center>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		/* <![CDATA[ */
-		(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+		(function() {
+			try {
+				var s, a, i, j, r, c, l = document.getElementsByTagName("a"),
+					t = document.createElement("textarea");
+				for (i = 0; l.length - i; i++) {
+					try {
+						a = l[i].getAttribute("href");
+						if (a && a.indexOf("/cdn-cgi/l/email-protection") > -1 && (a.length > 28)) {
+							s = '';
+							j = 27 + 1 + a.indexOf("/cdn-cgi/l/email-protection");
+							if (a.length > j) {
+								r = parseInt(a.substr(j, 2), 16);
+								for (j += 2; a.length > j && a.substr(j, 1) != 'X'; j += 2) {
+									c = parseInt(a.substr(j, 2), 16) ^ r;
+									s += String.fromCharCode(c);
+								}
+								j += 1;
+								s += a.substr(j, a.length - j);
+							}
+							t.innerHTML = s.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+							l[i].setAttribute("href", "mailto:" + t.value);
+						}
+					} catch (e) {}
+				}
+			} catch (e) {}
+		})();
 		/* ]]> */
-		</script>
-		<script type="text/javascript">
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".r").each(function() {
+				var t = $(this),
+					o = t.data("rot"),
+					i = {
+						rot: 0,
+						pos: 0
+					};
+				$(i).animate({
+					rot: o,
+					pos: 200
+				}, {
+					step: function(o, i) {
+						var n = i.elem.pos,
+							e = i.elem.rot;
+						"pos" == i.prop ? n = o : "rot" == i.prop && (e = o), t.css("transform", "rotate(" + e + "deg) translate(" + n + "px) rotate(-" + e + "deg)")
+					},
+					duration: 1e3
+				})
+			})
+		}), $(document).ready(function() {
+			function t() {
+				$(".modal").each(function() {
+					0 == $(this).hasClass("in") && $(this).show();
+					var t = $(window).height() - 60,
+						o = $(this).find(".modal-header").outerHeight() || 2,
+						i = $(this).find(".modal-footer").outerHeight() || 2;
+					$(this).find(".modal-content").css({
+						"max-height": function() {
+							return t
+						}
+					}), $(this).find(".modal-body").css({
+						"max-height": function() {
+							return t - (o + i)
+						}
+					}), $(this).find(".modal-dialog").css({
+						"margin-top": function() {
+							return -($(this).outerHeight() / 2)
+						},
+						"margin-left": function() {
+							return -($(this).outerWidth() / 2)
+						}
+					}), 0 == $(this).hasClass("in") && $(this).hide()
+				})
+			}
+			$(window).resize(t).trigger("resize")
+		}), $(document).ready(function() {
+			var t = ["top", "bottom", "left", "right"];
+			for (var o in t) {
+				var i = t[o];
+				$("[rel=tt-" + i + "]").tooltip({
+					placement: i,
+					container: "body"
+				})
+			}
+			$(".modal").on("show.bs.modal", function() {
+				$("[rel=tt-top]").tooltip("hide")
+			})
+		});
+	</script>
+</body>
 
-			$(document).ready(function(){$(".r").each(function(){var t=$(this),o=t.data("rot"),i={rot:0,pos:0};$(i).animate({rot:o,pos:200},{step:function(o,i){var n=i.elem.pos,e=i.elem.rot;"pos"==i.prop?n=o:"rot"==i.prop&&(e=o),t.css("transform","rotate("+e+"deg) translate("+n+"px) rotate(-"+e+"deg)")},duration:1e3})})}),$(document).ready(function(){function t(){$(".modal").each(function(){0==$(this).hasClass("in")&&$(this).show();var t=$(window).height()-60,o=$(this).find(".modal-header").outerHeight()||2,i=$(this).find(".modal-footer").outerHeight()||2;$(this).find(".modal-content").css({"max-height":function(){return t}}),$(this).find(".modal-body").css({"max-height":function(){return t-(o+i)}}),$(this).find(".modal-dialog").css({"margin-top":function(){return-($(this).outerHeight()/2)},"margin-left":function(){return-($(this).outerWidth()/2)}}),0==$(this).hasClass("in")&&$(this).hide()})}$(window).resize(t).trigger("resize")}),$(document).ready(function(){var t=["top","bottom","left","right"];for(var o in t){var i=t[o];$("[rel=tt-"+i+"]").tooltip({placement:i,container:"body"})}$(".modal").on("show.bs.modal",function(){$("[rel=tt-top]").tooltip("hide")})});
-
-		</script>
-	</body>
 </html>
