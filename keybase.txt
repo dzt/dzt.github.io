@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/pxtvr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://petersoboyejo.com
+  * I am pxtvr (https://keybase.io/pxtvr) on keybase.
+  * I have a public key with fingerprint 9F15 9439 692B 5664 C29D  514B F51A 717F E412 27DC
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01016fa11145991bbd182b311a7d5814081c82479b28b7912daa35dc5505483ca9ca0a",
+            "fingerprint": "9f159439692b5664c29d514bf51a717fe41227dc",
+            "host": "keybase.io",
+            "key_id": "f51a717fe41227dc",
+            "kid": "01016fa11145991bbd182b311a7d5814081c82479b28b7912daa35dc5505483ca9ca0a",
+            "uid": "797f7986faa21465a2375844c5f9de19",
+            "username": "pxtvr"
+        },
+        "service": {
+            "hostname": "petersoboyejo.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1486785659,
+    "expire_in": 157680000,
+    "prev": "ef1d96b878af98c22c937f64656398821de806b7605d02ac5f124b27c5f812ba",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMIpAnicrZJdSBVBFMevmmWiYd5bKEbiUhklsjO7sztzewiEvujDvikoLju7s95N
+3b3t3XvzA6MvAkUpeqqIHpIIEYyyAqPgKmFplmHBpSwqwYeg6EEjiKxmJd96bF5m
+5pz//zfnHOZRflYgN+MNSO/8ntgwnvG0/2IicOBqe3OzQB2jUQg3C7VsdmN1Bot7
+kVrLEMKCCESgmBoAQEaEAEoNgCGVANBUA2EgixjoGMoqoRBTlQBoaJqEDB0hEclY
+0jWia6ImVAimZdcwN+ZatsexxASIyBJRCKRIUWQdEgMBmZqIg4FqMhlAqBo6N0ad
+uO/gxVEtzioth8f4JTJb3j/0/7nuxCxOJaqpEsyJGgSygjQoqQjLso5MYjBAfGGc
+ubZWz7g61uAlXaGlQuChpKUzf6p+G3Np5jE37lCnkR1xKnWnnrtjruM5ulPH01HP
+i4V9t9cY8+XHGI38BUWoZRt8kNyQ5AjLsYUw4Erds3wykLGiYqQgUiGwhpjlsojl
+K5CqYJEv/xmW5EhmAoMoFKtYMwnWIdSJpJoKb0yRCMYQGAyLClUVERki1HiXAMoU
+qvyAAaT+XOLsqO0IYYmXqdVwZNyqsTUv4TKhZSB1aF4gIzcwPzvT/2CB3IUFc9/u
+49oFM4Wt6Wf5XUMhabgjlFlX3gfOHgwu/L3ndSo0UHYiUPSld6hge2z7xFjk4Y5v
+i3bd3V/RV3JJ3Ft659X6+sulg7/GQ8qpps7DeqDxZ6S/cDTYs7LYbEspvUumRzpd
+6dPoiybvsz3QnnVv+vqq/KrP0a/Zd1MzHfaWIrtu6cvWknS65N3z/uybBenki4bz
+3YMr1vV1pKpGR6zgjYnxM1NlPfSDNVl94eRQdGt7zqa86s01i97vvQ+kt4nBvKqm
+nVejXjDz9OLq3bd/hJrGSq9NHq8ti7xeXnJu8FbxsuDjmyO9KOv3lbW3tjxoP925
+sfzJttXD171Qqm3scE/O1NauNfu6J/8AlGU9EA==
+=9lPj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pxtvr
+
+==================================================================
