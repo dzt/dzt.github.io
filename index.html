@@ -105,7 +105,7 @@
 					<div class="modal-body" style="max-height: 793px;">
 						<p>Hi there. My name is Peter Soboyejo.</p>
 						<p>
-							I'm a 16 year old developer based in Northborough, Massachusetts. For my entire life I've had a passion for learning about how things work and building new things.
+							I'm a <span id="age"></span> year old developer based in Northborough, Massachusetts. For my entire life I've had a passion for learning about how things work and building new things.
 						</p>
 						<p>
 							I'm currently working on <a href="/sscout">sScout</a> a powerful multi-platform auto-purchase system for <a href="http://supremenewyork.com">Supreme</a> that allows users to obtain items that sell out quickly.
@@ -247,6 +247,16 @@
 				$("[rel=tt-top]").tooltip("hide")
 			})
 		});
+
+
+		/* dirty code by philippeloctaux.com */
+		var birthDate = new Date(2000, 9, 13, 0, 0, 0, 0);
+		var currentDate = new Date();
+		var age = currentDate.getFullYear() - birthDate.getFullYear();
+		var month = currentDate.getMonth() - birthDate.getMonth();
+		var day = currentDate.getDate() - birthDate.getDate();
+		if ( month < 0 || month == 0 && day < 0 ) { age--; }
+		document.getElementById("age").innerHTML = age;
 	</script>
 </body>
 
