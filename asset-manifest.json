@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c9a8808.chunk.css",
+    "main.js": "/static/js/main.8545a4d4.chunk.js",
+    "main.js.map": "/static/js/main.8545a4d4.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.56e7ac16.chunk.js": "/static/js/2.56e7ac16.chunk.js",
+    "static/js/2.56e7ac16.chunk.js.map": "/static/js/2.56e7ac16.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.5c178f2823b4d84ff460e9b01cf06661.js": "/precache-manifest.5c178f2823b4d84ff460e9b01cf06661.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1c9a8808.chunk.css.map": "/static/css/main.1c9a8808.chunk.css.map",
+    "static/media/algonquin.png": "/static/media/algonquin.818631e4.png",
+    "static/media/kleidi.png": "/static/media/kleidi.8ee86905.png",
+    "static/media/sscout.png": "/static/media/sscout.cecbf7c4.png"
+  }
+}
